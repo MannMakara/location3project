@@ -2,6 +2,8 @@ class Property < ActiveRecord::Base
   belongs_to :type
   belongs_to :publisher
   has_many :galleries
+
+  validates :title, presence: true
   def self.view_all
   	$is_view_all=true
   	all.order('created_at DESC')

@@ -1,5 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe Type, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe "A type" do
+	it "require a property type " do
+		t = Type.new(property_type: "")
+		expect(t.valid?).to be false
+		expect(t.errors[:property_type].any?).to be true
+	end
 end
