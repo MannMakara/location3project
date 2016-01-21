@@ -1,0 +1,74 @@
+<div id="wrapper">
+	<div id="slider-wrapper">
+		<div class="slider">
+			<div id="sliderFrame">
+        <div id="slider">
+            <%= image_tag("image-slider-2.jpg", alt: "Building A") %>
+            <%= image_tag("image-slider-3.jpg", alt: "Building B") %>
+            <%= image_tag("image-slider-4.jpg", alt: "Building C") %>
+            <%= image_tag("image-slider-5.jpg", alt: "Building D") %>
+        </div>
+    	</div>		
+		</div>
+		<div class="search">
+			<form>
+				<h3>Property Search</h3>
+				<hr/>
+				<label>Status</label>
+			  <select class="form-control" id="sel1">
+				  <option>1</option>
+				</select>
+			  <label>Beds</label><br/>
+			  <input type="text" /><br/>
+			  <label>Baths</label><br/>
+			  <input type="text"/>
+				<fieldset>
+	  			<legend>Location:</legend>
+	  				<label class="field">City/Province</label>
+			  		<select class="field form-control" id="">
+				  		<option>1</option>
+						</select>
+						<label class="field">Sangkat/District</label>
+			  		<select class="field form-control" id="">
+				  		<option>1</option>
+						</select>
+	 			</fieldset>
+				<br/>
+			  <input type="submit" value="Search" class="advance-search-btn">
+			  <%= link_to "Advance search","#",:class => 'advancesearch'%>
+		  </form>
+		</div>
+	</div>
+	<h2>Newest properties</h2>
+	<div id="content-wrapper">
+		<section>
+			<ul class="grid">
+				<% @properties.each do |property| %>
+				<li>
+					<div class="panel">
+						<h4><%= link_to property.title, property_path(property) %></h4>
+						<%= image_tag(property.image, class: "image_home" )%>
+						<ul class="spec">
+							<li>Spec:<%= property.spec %></li>
+							<li>Beds:<%= property.beds %></li>
+							<li>Baths:<%= property.baths %></li>	
+						</ul>
+						<p>
+							<%= truncate(property.description, length: 250, separator: ' ') %>
+						</p>
+					</div>
+				</li>
+				<% end %>
+		</ul>
+		<%= display_for(@properties[0]) %>
+	</section>
+	<aside>
+		<div id="feature">
+
+		</div>
+		<div id="contact">
+
+		</div>
+	</aside>
+</div>
+</div>

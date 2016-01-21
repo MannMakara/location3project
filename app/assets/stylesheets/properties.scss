@@ -1,0 +1,335 @@
+// Place all the styles related to the Properties controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #bfbfbf ;
+    overflow: auto;
+}
+h1, h2, h3, h4, h5, h6,p,a{
+    font-family: Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    margin: 0px auto;
+    height: 108px;
+    overflow: hidden;
+    z-index: 150;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background: #000066;
+}
+
+#wrapper{
+    width: 1000px;
+    height:100%;
+    margin:auto;
+    h2{
+      font: 1.5em "MS Serif", "New York", serif,"Time New Roman";
+      margin-top: 20px;
+      padding-top: 10px;
+      color: #000099;
+    }
+}
+#slider-wrapper{
+  position:relative;
+  display:inline;
+}
+.slider {
+    background: #fff;
+    position: relative;
+    float:left;
+    width: 700px;
+    height: 360px;
+    padding-top:7px;
+    margin:0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 3px #c3c2c3;
+    -webkit-box-shadow: 0px 1px 3px #c3c2c3;
+    -moz-box-shadow: 0px 1px 3px #c3c2c3;
+}
+.search{
+    background: #fff;
+    position: relative;
+    float:right;
+    width: 280px;
+    height: 360px;
+    padding: 6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 3px #c3c2c3;
+    -webkit-box-shadow: 0px 1px 3px #c3c2c3;
+    -moz-box-shadow: 0px 1px 3px #c3c2c3;
+    h3{
+      height:20px;
+      font-size:18px;
+    }
+    label{
+      font-size:12px;
+    }
+    select{
+      height:25px;
+    }
+    hr{
+      margin:0px;
+      padding:0px;
+    }
+    fieldset{
+      width:265px;
+      padding:0;
+      margin:0;
+    }
+    legend{
+      font-size:12px;
+      font-weight: bold;
+      padding:0;
+      margin:0;
+    }
+    select.field{
+      padding:0;
+      margin:0;
+    }
+    label.field{
+      margin:0;
+      padding:0;
+      font-size:11px;
+      font-style:italic;
+    }
+    input[type=text]{
+      width:267px;
+      height:25px;
+    }
+
+}
+.advance-search-btn{
+  background:#006600;
+  cursor:pointer; 
+  display:inline-block; 
+  color:#fff; 
+  text-shadow:1px 1px 1px #333; 
+  width:270px;
+  height:30px; 
+  line-height:29px; 
+  display:block; 
+  padding:0 0 4px 0; 
+  margin:0;
+  float:right; 
+  border:1px solid #0d52a4; 
+  text-align:center;  
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px; 
+  border-radius: 3px; 
+  font-size:18px;
+}
+.advance-search-btn:hover{
+  background:#006633;
+}
+.advancesearch{
+  position:relativee;
+  float:right;
+}
+
+#content-wrapper{
+  position:relative;
+  display:inline;
+}
+section{
+    position: relative;
+    width: 700px;
+    margin: 20px 0px 100px 0x;
+    padding: 10px 10px 50px 10px;
+    float: left;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 3px #c3c2c3;
+    -webkit-box-shadow: 0px 1px 3px #c3c2c3;
+    -moz-box-shadow: 0px 1px 3px #c3c2c3;
+    .viewall{
+      float:right;
+      padding-right:15px;
+    }
+
+}
+
+ul.grid{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+ul.grid li{
+  display:block;
+  float:left;
+  margin: 0px 15px;
+  width:310px;
+}
+.panel{
+  width:310px;
+  height:370px;
+  margin:10px 0px 20px 0px; 
+  padding-top:10px;
+  border:1px solid #E8E8E8 ;
+  h4{
+    padding-left:5px;
+  }
+  ul.spec{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    height:25px;
+    background:#D8D8D8;
+  }
+  ul.spec li{
+    display:inline;
+    float:left;
+    margin:0 5px;
+    width:85px;
+  }
+  p{
+    font: 1em "MS Serif", "New York", serif,"Time New Roman";
+    text-align:justify;
+    padding: 10px;
+    color:#909090;
+  }
+}
+
+.image_home{
+  width:308px;
+  height:200px;
+  margin:0;
+  padding-top:10px;
+}
+
+ul.image-grid{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+ul.image-grid li{
+  display:block;
+  float:left;
+  margin: 0px 15px;
+  padding:10px;
+  width:150px;
+  height:100px;
+}
+aside{
+    position: relative;
+    float:right;
+    width: 280px;
+    height: 900px;
+    margin:0 0 100px 0;
+    padding: 0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 3px #c3c2c3;
+    -webkit-box-shadow: 0px 1px 3px #c3c2c3;
+    -moz-box-shadow: 0px 1px 3px #c3c2c3;
+}
+#feature{
+  position:relative;
+  width:280px;
+  height:680px;
+  background:#fff;
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 3px #c3c2c3;
+    -webkit-box-shadow: 0px 1px 3px #c3c2c3;
+    -moz-box-shadow: 0px 1px 3px #c3c2c3;
+}
+#contact{
+  position:relative;
+  width:280px;
+  height:180px;
+  margin-top:20px;
+  background:#fff;
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 3px #c3c2c3;
+    -webkit-box-shadow: 0px 1px 3px #c3c2c3;
+    -moz-box-shadow: 0px 1px 3px #c3c2c3;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background: #f00;
+  width:100px;
+  text-align: center;
+}
+
+#property_info{
+    padding:5px;
+    margin:0px;
+    h2{
+      margin:10px 0 0 0;
+      padding:0;
+      }
+    hr{
+        padding-top:0;
+        margin-top:0;
+    }
+    p{
+      margin:0px;
+      padding:0px;
+    }
+    #map{ 
+      width:670px;
+      height:400px; 
+      
+    }
+}
+.contact{
+  padding:0;
+  margin:0;
+}
+.contact ul{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+}
+.contact ul li{
+  padding:0;
+  margin:0;
+}
