@@ -3,7 +3,7 @@ class PropertiesController < ApplicationController
 		if params[:view_all]
 			@properties = Property.view_all
 		else
-			@properties = Property.view_limit(1)
+			@properties = Property.view_limit(4)
 		end
 	end
 	def show
